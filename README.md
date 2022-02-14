@@ -11,3 +11,5 @@ Setup Process
 8. app.get(): This is just a message to let us know that the server is running
 9. app.listen(): Make the server listen on a specific port
    - At this point, this is the end bare bone EXPRESS application
+   - To run application (on terminal), use npm run dev
+   - Stop server: ctrl + c
