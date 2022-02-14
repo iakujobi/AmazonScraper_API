@@ -52,3 +52,5 @@ Note: There are 2 branches. Master (w/out comments) & withComments (has comments
     - add generateScraperUrl(apiKey) in place of baseUrl to each response from scraperapi
 
 ## READY TO DEPLOY CODE TO HEROKU!!!
+
+## DEPLOY TO RAPIDAPI MARKETPLACE!!!
