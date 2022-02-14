@@ -5,7 +5,7 @@ const request = require('request-promise') // use request-promise to make api re
 // Initialize the application
 const app = express() // call express as a function
 // Create port
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 6000
 
 app.use(express.json()) // allows the application to parse JSON input
 
@@ -19,4 +19,4 @@ app.get('/', (req, res) => {
 // Last thing needed to start the server
 // Make the server listen on a specific port
 // ${PORT}: template strings which helps us to specify on which port we are currently running the application
-app.listen(PORT, () => console.log('Server running on port ${PORT}'))
+app.listen(PORT, () => console.log('Server listening on port ' + PORT))
