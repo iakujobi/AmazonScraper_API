@@ -1,5 +1,7 @@
 # Setup Process
 
+Note: There are 2 branches. Master (w/out comments) & withComments (has comments). The master branch is hosted on Heroku
+
 1. npm init -y: Creates package.json
 2. npm install express request-promise nodemon: Install the express, request-promise and nodemon packages
    - Add dev command to script: This allows us to run the application while developing
