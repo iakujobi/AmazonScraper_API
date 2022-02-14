@@ -38,3 +38,15 @@
     - added /offers to GET route
     - changed the response from scraperapi from /dp/ to /gp/offer-listing/
     - check result on http://localhost:6001/products/B08N5LFLC3/offers
+15. Create GET route for Search Results
+    - When you go Amazon and search for Macbook Air, we get a query like this: https://www.amazon.com/s?k=macbook+air&crid=6CA6GCWXVHH2&sprefix=macbook+air%2Caps%2C64&ref=nb_sb_noss_1
+    - Use this to URL to construct the searchQuery for the scraperapi response
+    - use searchQuery and change /dp/ to /s?k=${searchQuery}
+    - To access result, use http://localhost:6001/search/macbookair
+16. Do we want to share our API or do we want to everyone to get their own scraper api key?
+    - create generateScraperUrl. Allows user to use their own scraper api key
+    - enables user to enter their own API key - const { api_key } = req.query
+    - for user to use their api key, use /products/:productID?api_key=
+    - add generateScraperUrl(apiKey) in place of baseUrl to each response from scraperapi
+
+## READY TO DEPLOY CODE TO HEROKU!!!
