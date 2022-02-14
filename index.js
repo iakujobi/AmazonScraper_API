@@ -9,7 +9,7 @@ const app = express() // call express as a function
 const PORT = process.env.PORT || 6001
 
 // API key from scraperapi.com
-const apiKey = process.env.SCRAPER_API_KEY
+const apiKey = process.env.SCRAPER_API_KEY // reference scraperapi key in .env file
 
 // Create base URL
 const baseUrl = `https://api.scraperapi.com?api_key=${apiKey}&autoparse=true` // we can now make our own routes from our API to fetch specific products and add extra parameters (use &)

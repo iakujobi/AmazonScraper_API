@@ -27,3 +27,4 @@
     - To run route on server, use http://localhost:6001/products/B08N5LFLC3
     - B08N5LFLC3 is the productID and can get it from amazon url for a particular product.
     - Example: a specific macbook air laptop url is https://www.amazon.com/Apple-MacBook-13-inch-512GB-Storage/dp/B08N5LFLC3/ref=sr_1_3?crid=1X2QLT72QF31O&keywords=macbook+air&qid=1644807769&sprefix=macbook+air%2Caps%2C64&sr=8-3
+    - NOTE: npm install dotenv - allows us to use the .env library. Create a .env file and hide scraperapi key
