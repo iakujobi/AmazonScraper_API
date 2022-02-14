@@ -1,6 +1,6 @@
 # Setup Process
 
-Note: There are 2 branches. Master (w/out comments) & withComments (has comments). The master branch is hosted on Heroku
+> Note: There are 2 branches. Master (w/out comments) & withComments (has comments). The master branch is hosted on Heroku
 
 1. npm init -y: Creates package.json
 2. npm install express request-promise nodemon: Install the express, request-promise and nodemon packages
@@ -51,6 +51,6 @@ Note: There are 2 branches. Master (w/out comments) & withComments (has comments
     - for user to use their api key, use /products/:productID?api_key=
     - add generateScraperUrl(apiKey) in place of baseUrl to each response from scraperapi
 
-## READY TO DEPLOY CODE TO HEROKU!!!
+> READY TO DEPLOY CODE TO HEROKU!!!
 
-## DEPLOY TO RAPIDAPI MARKETPLACE!!!
+> DEPLOY TO RAPIDAPI MARKETPLACE!!!
