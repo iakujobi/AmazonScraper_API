@@ -65,6 +65,27 @@ app.get('/products/:productID/reviews', async (req, res) => {
     }
 })
 
+// Create route to fetch product offers
+// GET Product Offers
+// :productID - the colon means that the product ID is going to be dynamic
+app.get('/products/:productID/offers', async (req, res) => {
+    // First get productID from parameters
+    const { productID } = req.params // productID is going to be populated inside request.paramaters
+
+    try {
+        // Get a response from scraperapi
+        // Inside request, provide the first url and add extra parameters (use &)
+        // dp: this is product details
+        const response = await request(`${baseUrl}&url=https://www.amazon.com/gp/offer-listing/${productID}`) // this is going to give us information for a specific product
+
+        // Send response back from the server
+        // res.json(response) // response in text format
+        res.json(JSON.parse(response)) // transforms result to JSON
+    } catch (err) {
+        res.json(err) // provide the error
+    }
+})
+
 // Last thing needed to start the server
 // Make the server listen on a specific port
 // ${PORT}: template strings which helps us to specify on which port we are currently running the application

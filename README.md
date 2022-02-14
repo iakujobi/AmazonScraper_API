@@ -34,3 +34,7 @@
     - added /reviews to GET route
     - changed the response from scraperapi from /dp/ to /product-reviews/
     - check result on http://localhost:6001/products/B08N5LFLC3/reviews
+14. Create GET route for Product Offers
+    - added /offers to GET route
+    - changed the response from scraperapi from /dp/ to /gp/offer-listing/
+    - check result on http://localhost:6001/products/B08N5LFLC3/offers
