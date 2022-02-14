@@ -16,6 +16,8 @@
    - Stop server: ctrl + c
    - Server crashed because request-promise needs a dependency. Need to install request
    - npm install request: Installs request. Server run smoothly!
+   - npm run dev: Starts the server to start listening on port 6001.
+   - check browser for result: http://localhost:6001/
 10. Sign up on scraperapi.com: It's a proxy API for web scraping
     - Create an apiKey with it
 11. Create baseUrl: we can now make our own routes from our API to fetch specific products
@@ -28,3 +30,7 @@
     - B08N5LFLC3 is the productID and can get it from amazon url for a particular product.
     - Example: a specific macbook air laptop url is https://www.amazon.com/Apple-MacBook-13-inch-512GB-Storage/dp/B08N5LFLC3/ref=sr_1_3?crid=1X2QLT72QF31O&keywords=macbook+air&qid=1644807769&sprefix=macbook+air%2Caps%2C64&sr=8-3
     - NOTE: npm install dotenv - allows us to use the .env library. Create a .env file and hide scraperapi key
+13. Create GET route for Product Reviews
+    - added /reviews to GET route
+    - changed the response from scraperapi from /dp/ to /product-reviews/
+    - check result on http://localhost:6001/products/B08N5LFLC3/reviews
