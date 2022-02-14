@@ -13,3 +13,5 @@ Setup Process
    - At this point, this is the end bare bone EXPRESS application
    - To run application (on terminal), use npm run dev
    - Stop server: ctrl + c
+   - Server crashed because request-promise needs a dependency. Need to install request
+   - npm install request: Installs request. Server run smoothly!
