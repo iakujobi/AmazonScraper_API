@@ -54,3 +54,5 @@
 > READY TO DEPLOY CODE TO HEROKU!!!
 
 > DEPLOY TO RAPIDAPI MARKETPLACE!!!
+
+YouTube: https://www.youtube.com/watch?v=be9sHQ7xqo0&t=1283s
